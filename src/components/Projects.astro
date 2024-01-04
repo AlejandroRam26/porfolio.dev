@@ -1,0 +1,21 @@
+---
+import SocialPill from "./SocialPill.astro";
+import { projects } from "../data/porfolio_data.json";
+import Card from "./Card.astro";
+const PROJECTS = projects;
+---
+
+<div class="w-full grid grid-cols-10 gap-8 auto-rows-[25rem]
+mx-auto">
+  {
+    PROJECTS.map((project) => (
+      // { title, description, tags, link, github, image }
+      <Card {...project} />
+    ))
+  }
+</div>
+<style is:global>
+  p strong {
+    font-weight: 700;
+  }
+</style>

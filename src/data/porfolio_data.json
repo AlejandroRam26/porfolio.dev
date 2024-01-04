@@ -1,0 +1,62 @@
+{
+  "name": "AleRam",
+  "description": "Desarrollador Web y Escritorio",
+  "minor_description": "Especializado en crear aplicaciones de Escritorio",
+  "title_description": "Desarrollador y Programador",
+  "meta_description": "Especializado en crear aplicaciones de Escritorio",
+  "address": "Santa Fe, Argentina",
+  "experience_time": "3 años",
+  "aviable_work": true,
+  "avatar": "https://avatars.githubusercontent.com/u/123039251?v=4",
+  "linkedin": "https://www.linkedin.com/in/alejandro-ramirez-406bb7260/",
+  "github": "https://github.com/AlejandroRam26",
+  "mail": "aleramirez0326gmail.com",
+  "projects": [
+    {
+      "title": "Sistema Control de Stock",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Atlas - ERP",
+      "description": "Sistema capas de confeccionar libros contables como: diario, mayores y balance",
+      "link": "https://flowbite.com/docs/components/badge/",
+      "github": "https://flowbite.com/docs/components/badge/",
+      "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Sistema Control de Stock",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Sistema Control de Stock",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Sistema Control de Stock",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Sistema Control de Stock",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "experience": [
+    {
+      "date": "Mes Año",
+      "title": "Titulo",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet temporibus, necessitatibus ipsam, ea delectus quos, obcaecati odit minima neque reiciendis? Odio asperiores nesciunt cumque!",
+      "link": "/"
+    },
+    {
+      "date": "Mes Año",
+      "title": "Titulo",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores, quaerat officia reprehenderit minima accusantium?"
+    }
+  ]
+}

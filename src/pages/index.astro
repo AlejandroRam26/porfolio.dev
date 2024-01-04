@@ -1,0 +1,118 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import MailIcon from "../icons/Mail.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import BriefcaseIcon from "../icons/Briefcase.astro";
+import CodeIcon from "../icons/Code.astro";
+import Projects from "../components/Projects.astro";
+import {
+  name,
+  mail,
+  github,
+  linkedin,
+  description,
+  minor_description,
+  title_description,
+  meta_description,
+  address,
+  experience_time,
+  aviable_work,
+} from "../data/porfolio_data.json";
+import Header from "../components/Header.astro";
+---
+
+<Layout
+  title={`Porfolio de ${name} - ${title_description}`}
+  description={`${meta_description}`}
+>
+  <Header />
+  <main class="px-4">
+    <SectionContainer class="min-h-[100vh] flex flex-col justify-center">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hola, soy {name}
+        <a
+          class="flex justify-center items-center"
+          href={linkedin}
+          target="_blank"
+          rel="noopener"
+          ><Badge {aviable_work} />
+        </a>
+      </h1>
+      <h2 class="text-xl text-wrap">
+        {experience_time && <span>+{experience_time} de experiencia.</span>}
+        <span class="text-yellow-200/90">{`${description}. `}</span>
+        <span class="text-sky-400/80">De {`${address}. `}</span>
+        <span class="opacity-80">{`${minor_description}. `}</span>
+      </h2>
+      <nav class="flex gap-x-4 mt-8">
+        {
+          linkedin && (
+            <SocialPill href={linkedin}>
+              <LinkedInIcon class="size-6" />
+              LinkedIn
+            </SocialPill>
+          )
+        }
+        {
+          github && (
+            <SocialPill href={github}>
+              <GitHubIcon class="size-6" />
+              Github
+            </SocialPill>
+          )
+        }
+        {
+          mail && (
+            <SocialPill href="/GitHub">
+              <MailIcon class="size-6" />
+              {mail}
+            </SocialPill>
+          )
+        }
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2
+        class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
+      >
+        <BriefcaseIcon class="size-8" />
+         Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+    
+    <SectionContainer id="proyectos">
+      <h2
+        class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
+      >
+        <CodeIcon class="size-8" />
+         Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+    
+    <SectionContainer id="sobre-mi">
+      <h2
+        class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
+      >
+        <CodeIcon class="size-8" />
+         Sobre Mí
+      </h2>
+    </SectionContainer>
+    
+    <SectionContainer id="contacto">
+      <h2
+        class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
+      >
+        <CodeIcon class="size-8" />
+         Contacto
+      </h2>
+    </SectionContainer>
+  </main>
+</Layout>

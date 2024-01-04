@@ -1,0 +1,9 @@
+{
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "workbench.editor.languageDetection": true,
+    "editor.fontFamily": "'Cascadia Code'",
+    "editor.fontLigatures": true,
+    "workbench.tree.enableStickyScroll": true,
+    "editor.guides.bracketPairs": true
+}
