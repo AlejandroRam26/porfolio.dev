@@ -5,14 +5,17 @@ const { href, class: className } = Astro.props;
 <a
   href={href}
   class={`gap-x-5
-hover:text-blue-500 transition ${className} font-semibold
+  transition ${className} font-semibold
 bg-transparent
 hover:bg-gray-950/80
 duration-300
 delay-400
 hover:delay-0
-shadow-md hover:shadow-indigo-500 border-2 border-transparent
-rounded-md px-2 py-1 hover:border-indigo-500`}
+shadow-md border-2 border-transparent
+rounded-md px-2 py-1
+hover:text-blue-400
+hover:shadow-indigo-500
+hover:border-indigo-500`}
 >
   <slot />
 </a>

@@ -1,4 +1,5 @@
 ---
+import Tags from './Tags.astro';
 interface Props {
   title: string;
   description: string;
@@ -43,13 +44,11 @@ const { title, description, image, link, github, tags } = Astro.props;
     <ul class="flex flex-row gap-3 justify-start items-center">
       {
         tags &&
-          tags.map((tag) => (
-            <li>
-              <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-                {tag}
-              </span>
-            </li>
-          ))
+        tags.map((tag) => (
+          <li>
+            <Tags tag={tag}/>
+          </li>
+        ))
       }
     </ul>
     <nav class="flex flex-row gap-x-3">
