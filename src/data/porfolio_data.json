@@ -15,7 +15,7 @@
     {
       "title": "Sistema Control de Stock",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["VB", "Excel"]
+      "tags": ["VB", "EXCEL"]
     },
     {
       "title": "Atlas - ERP",
@@ -23,12 +23,12 @@
       "link": "https://flowbite.com/docs/components/badge/",
       "github": "https://flowbite.com/docs/components/badge/",
       "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
-      "tags": ["C#", "Net", "MySql", "WPF"]
+      "tags": ["CS", "NET", "MYSQL", "WPF"]
     },
     {
       "title": "Website Restaurant",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["React", "CSS", "JS"]
+      "tags": ["REACT", "TAILWIND", "JS"]
     },
     {
       "title": "Sistema Control de Stock",

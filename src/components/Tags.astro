@@ -1,37 +1,64 @@
 ---
 interface _TAG {
-  display: string;
-  class: string;
-  icon?: CompositionEvent;
+  [key: string]: { name: string; class: string; icon?: CompositionEvent };
 }
-const TAGS = {
-  "": {
-    display: "Any",
-    class: "bg-orange-500",
-  },
+export const TAGS: _TAG = {
   HTML: {
-    display: "HTML",
-    class: "bg-orange-500",
+    name: 'HTML',
+    class: 'bg-orange-800/50 text-orange-400 border-orange-400',
   },
   CSS: {
-    display: "CSS",
-    class: "bg-yellow-500",
+    name: 'CSS',
+    class: 'bg-blue-800/50 text-blue-400 border-blue-400',
   },
   JS: {
-    display: "JavaScript",
-    class: "bg-gold-500",
+    name: 'JavaScript',
+    class: 'bg-yellow-800/50 text-yellow-400 border-yellow-400',
   },
   TAILWIND: {
-    display: "TailwindCss",
-    class: "bg-sky-500",
+    name: 'Tailwind Css',
+    class: 'bg-sky-800/50 text-sky-400 border-indigo-400',
   },
+  CS:{
+    name:'C#',
+    class: 'bg-purple-800/50 text-purple-400 border-purple-400'
+  },
+  REACT:{
+    name:'React',
+    class: 'bg-teal-800/50 text-teal-400 border-teal-400'
+  },
+  MYSQL:{
+    name:'MySql',
+    class: 'bg-cyan-800/50 text-cyan-400 border-cyan-400'
+  },
+  NET:{
+    name:'Net Framework',
+    class: 'bg-violet-800/50 text-violet-400 border-violet-400'
+  },
+  EXCEL:{
+    name:'Excel',
+    class: 'bg-green-800/50 text-green-400 border-green-400'
+  },
+  VB:{
+    name:'VB',
+    class: 'bg-lime-800/50 text-lime-400 border-lime-400'
+  },
+  WPF:{
+    name:'WPF',
+    class: 'bg-emerald-800/50 text-emerald-400 border-emerald-400'
+  },
+  PHP:{
+    name:'Php',
+    class: 'bg-pink-800/50 text-pink-400 border-pink-400'
+  }
 };
-const { tag} = Astro.props;
+const { tag } = Astro.props;
 ---
 
 <span
-  class=`bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300
-  ${Astro.props.class} ${tag.class}`
+  class={`bg-gray-500/40 text-white border-white
+  font-medium px-2.5 py-0.5 rounded border-2
+  ${Astro.props.class} ${TAGS[tag] && TAGS[tag].class}`}
 >
-  {tag.display}
+  {TAGS[tag] ? TAGS[tag].name : tag}
 </span>

@@ -1,5 +1,5 @@
 ---
-import Tags from './Tags.astro';
+import Tags, { TAGS } from "./Tags.astro";
 interface Props {
   title: string;
   description: string;
@@ -12,12 +12,14 @@ const { title, description, image, link, github, tags } = Astro.props;
 ---
 
 <article
-  class="relative mb-5 border-2 rounded-xl
-  border-white/50 border-white
-  bg-[#050505]/50 hover:border-indigo-500/70
-  shadow-lg hover:shadow-indigo-500/50
-  transition overflow-hidden
-  col-span-10 md:col-span-5 group"
+  class={`relative border-2 rounded-xl shadow-md
+  border-white/70
+  bg-[#050505]/50
+  shadow-slate-500/50
+  hover:shadow-lg
+  hover:border-lime-500/70
+  hover:shadow-lime-500/50
+  transition overflow-hidden group`}
 >
   <div
     class="absolute top-0 bottom-0 left-0 right-0 z-10
@@ -41,17 +43,10 @@ const { title, description, image, link, github, tags } = Astro.props;
     <div>
       <p class="text-pretty max-w-[50ch] opacity-85" set:html={description} />
     </div>
-    <ul class="flex flex-row gap-3 justify-start items-center">
-      {
-        tags &&
-        tags.map((tag) => (
-          <li>
-            <Tags tag={tag}/>
-          </li>
-        ))
-      }
-    </ul>
-    <nav class="flex flex-row gap-x-3">
+    <nav class="flex flex-row gap-3 flex-wrap justify-start items-center pointer-events-none">
+      {tags && tags.map((tag) => <Tags tag={tag} />)}
+    </nav>
+    {link && github && <nav class="flex flex-row gap-3">
       {
         link && (
           <a
@@ -93,7 +88,7 @@ const { title, description, image, link, github, tags } = Astro.props;
             focus:z-10 focus:ring-4 focus:outline-none
             bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-blue-700 focus:ring-gray-700"
           >
-            GitHub {" "}
+            GitHub{" "}
             <svg
               class="w-3 h-3 ms-2 rtl:rotate-180"
               aria-hidden="true"
@@ -112,6 +107,6 @@ const { title, description, image, link, github, tags } = Astro.props;
           </a>
         )
       }
-    </nav>
+    </nav>}
   </div>
 </article>
