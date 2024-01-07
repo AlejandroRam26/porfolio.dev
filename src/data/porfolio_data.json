@@ -36,9 +36,9 @@
       "tags": ["HTML", "CSS", "JS"]
     },
     {
-      "title": "Sistema Control de Stock",
+      "title": "Spotify Replie",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["HTML", "CSS", "JS"]
+      "tags": ["REACT", "TAILWIND", "WPF"]
     },
     {
       "title": "Sistema Control de Stock",
@@ -52,26 +52,6 @@
       "title": "Titulo",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet temporibus, necessitatibus ipsam, ea delectus quos, obcaecati odit minima neque reiciendis? Odio asperiores nesciunt cumque!",
       "link": "/"
-    },
-    {
-      "date": "Mes Año",
-      "title": "Titulo",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores, quaerat officia reprehenderit minima accusantium?"
-    },
-    {
-      "date": "Mes Año",
-      "title": "Titulo",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores, quaerat officia reprehenderit minima accusantium?"
-    },
-    {
-      "date": "Mes Año",
-      "title": "Titulo",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores, quaerat officia reprehenderit minima accusantium?"
-    },
-    {
-      "date": "Mes Año",
-      "title": "Titulo",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores, quaerat officia reprehenderit minima accusantium?"
     }
   ]
 }
