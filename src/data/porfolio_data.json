@@ -15,7 +15,10 @@
     {
       "title": "Sistema Control de Stock",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["VB", "EXCEL"]
+      "link": "https://flowbite.com/docs/components/badge/",
+      "github": "https://flowbite.com/docs/components/badge/",
+      "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
+      "tags": ["VB", "EXCEL", "NET", "CS", "MYSQL", "WPF"]
     },
     {
       "title": "Atlas - ERP",
@@ -28,30 +31,80 @@
     {
       "title": "Website Restaurant",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["REACT", "TAILWIND", "JS"]
+      "tags": ["REACT", "TAILWIND", "JS"],
+      "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
+      "link": "https://flowbite.com/docs/components/badge/",
+      "github": "https://flowbite.com/docs/components/badge/"
     },
     {
       "title": "Sistema Control de Stock",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["HTML", "CSS", "JS"]
+      "tags": ["HTML", "ASTRO", "CSS", "TAILWIND", "JS"],
+      "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
+      "link": "https://flowbite.com/docs/components/badge/",
+      "github": "https://flowbite.com/docs/components/badge/"
     },
     {
       "title": "Spotify Replie",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["REACT", "TAILWIND", "WPF"]
+      "tags": ["REACT", "TAILWIND", "WPF"],
+      "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
+      "link": "https://flowbite.com/docs/components/badge/",
+      "github": "https://flowbite.com/docs/components/badge/"
     },
     {
-      "title": "Sistema Control de Stock",
+      "title": "Components",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["HTML", "CSS", "JS"]
+      "tags": ["DSYS", "ASTRO", "TAILWIND", "SBOOK", "ATOMIC"],
+      "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
+      "link": "https://flowbite.com/docs/components/badge/"
     }
   ],
   "experience": [
     {
-      "date": "Mes Año",
-      "title": "Titulo",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet temporibus, necessitatibus ipsam, ea delectus quos, obcaecati odit minima neque reiciendis? Odio asperiores nesciunt cumque!",
-      "link": "/"
+      "date": "Octubre 2023",
+      "title": "Sistema Control de Stock",
+      "description": [
+        {
+          "content": [
+            {
+              "content": "Funciones: ",
+              "htmlTag": "strong",
+              "class": "text-green-400"
+            },
+            {
+              "content": "Registro de productos | Control de Precios | Control de Stock"
+            }
+          ],
+          "htmlTag": "p"
+        },
+        {
+          "content": [
+            {
+              "content": "Lorem25: ",
+              "htmlTag": "strong",
+              "class": "text-green-400"
+            },
+            {
+              "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugiat ullam nobis voluptas explicabo sapiente soluta, corrupti non ratione nostrum, inventore enim, quasi aspernatur tenetur."
+            }
+          ],
+          "htmlTag": "p"
+        },
+        {
+          "content": [
+            {
+              "content": "Funciones: ",
+              "htmlTag": "strong",
+              "class": "text-green-400"
+            },
+            {
+              "content": "Registro de productos | Control de Precios | Control de Stock"
+            }
+          ],
+          "htmlTag": "p"
+        }
+      ]
     }
   ]
 }
