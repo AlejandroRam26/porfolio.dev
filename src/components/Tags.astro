@@ -1,64 +1,124 @@
 ---
 interface _TAG {
-  [key: string]: { name: string; class: string; icon?: CompositionEvent };
+  [key: string]: { name: string; class?: string; icon?: CompositionEvent };
 }
 export const TAGS: _TAG = {
   HTML: {
-    name: 'HTML',
-    class: 'bg-orange-800/50 text-orange-400 border-orange-400',
+    name: "HTML",
+    class: "bg-orange-800/50 text-orange-400 border-orange-400",
   },
   CSS: {
-    name: 'CSS',
-    class: 'bg-blue-800/50 text-blue-400 border-blue-400',
+    name: "CSS",
+    class: "bg-blue-800/50 text-blue-400 border-blue-400",
   },
   JS: {
-    name: 'JavaScript',
-    class: 'bg-yellow-800/50 text-yellow-400 border-yellow-400',
+    name: "JavaScript",
+    class: "bg-yellow-800/50 text-yellow-400 border-yellow-400",
+  },
+  TS: {
+    name: "TypeScript",
+    class: "bg-[#004ecc]/50 text-[#40beff] border-[#40beff]",
   },
   TAILWIND: {
-    name: 'Tailwind Css',
-    class: 'bg-sky-800/50 text-sky-400 border-indigo-400',
+    name: "Tailwind CSS",
+    class: "bg-sky-800/50 text-sky-400 border-indigo-400",
   },
-  CS:{
-    name:'C#',
-    class: 'bg-purple-800/50 text-purple-400 border-purple-400'
+  CS: {
+    name: "C#",
+    class: "bg-purple-800/50 text-purple-400 border-purple-400",
   },
-  REACT:{
-    name:'React',
-    class: 'bg-teal-800/50 text-teal-400 border-teal-400'
+  REACT: {
+    name: "React",
+    class: "bg-teal-800/50 text-teal-400 border-teal-400",
   },
-  MYSQL:{
-    name:'MySql',
-    class: 'bg-cyan-800/50 text-cyan-400 border-cyan-400'
+  VUE: {
+    name: "Vue.js",
+    class: "bg-[#0a7144]/50 text-[#33f59d] border-[#33f59d]",
   },
-  NET:{
-    name:'Net Framework',
-    class: 'bg-violet-800/50 text-violet-400 border-violet-400'
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-[#b80018]/50 text-[#ff546a] border-[#ff546a]",
   },
-  EXCEL:{
-    name:'Excel',
-    class: 'bg-green-800/50 text-green-400 border-green-400'
+  ASTRO: {
+    name: "Astro",
+    class: "bg-[#a31b09]/50 text-[#ff742f] border-[#ff742f]",
   },
-  VB:{
-    name:'VB',
-    class: 'bg-lime-800/50 text-lime-400 border-lime-400'
+  MYSQL: {
+    name: "MySql",
+    class: "bg-cyan-800/50 text-cyan-400 border-cyan-400",
   },
-  WPF:{
-    name:'WPF',
-    class: 'bg-emerald-800/50 text-emerald-400 border-emerald-400'
+  PSQL: {
+    name: "PostgreSQL",
+    class: "bg-[#31579c]/50 text-[#75b4e5] border-[#75b4e5]",
   },
-  PHP:{
-    name:'Php',
-    class: 'bg-pink-800/50 text-pink-400 border-pink-400'
+  NET: {
+    name: "ASP. Net",
+    class: "bg-violet-800/50 text-violet-400 border-violet-400",
+  },
+  EXCEL: {
+    name: "Excel",
+    class: "bg-green-800/50 text-green-400 border-green-400",
+  },
+  VB: {
+    name: "VB",
+    class: "bg-lime-800/50 text-lime-400 border-lime-400",
+  },
+  WPF: {
+    name: "WPF",
+    class: "bg-emerald-800/50 text-emerald-400 border-emerald-400",
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-pink-800/50 text-pink-400 border-pink-400",
+  },
+  SBOOK: {
+    name: "StoryBook",
+    class: "bg-red-800/50 text-red-400 border-red-400",
+  },
+  DATASET: {
+    name: "DataSet",
+    class: "bg-[#2f4a9d]/50 text-[#72a8e8] border-[#72a8e8]",
+  },
+  API: {
+    name: "API",
+    class: "bg-[#86341a]/50 text-[#e79d38] border-[#e79d38]",
+  },
+  FIGMA: {
+    name: "Figma",
+    class: "bg-[#b80018]/50 text-[#ff546a] border-[#ff546a]",
+  },
+  JAVA: {
+    name: "Java",
+    class: "bg-[#b82200]/50 text-[#ff7454] border-[#ff7454]",
+  },
+  NODE: {
+    name: "Node.js",
+    class: "bg-[#2b690b]/50 text-[#79f526] border-[#79f526]",
+  },
+  NEXT: {
+    name: "Next.js",
+    class: "bg-[#365154]/50 text-[#69a7a7] border-[#69a7a7]",
+  },
+  DSYS: {
+    name: "Design Systems",
+    class: "bg-[#b800b5]/50 text-[#ff5ef3] border-[#ff5ef3]",
+  },
+  ATOMIC: {
+    name: "Atomic Design",
+    class: "bg-[#962d1e]/50 text-[#f58474] border-[#f58474]",
   }
 };
 const { tag } = Astro.props;
 ---
 
 <span
-  class={`bg-gray-500/40 text-white border-white
-  font-medium px-2.5 py-0.5 rounded border-2
-  ${Astro.props.class} ${TAGS[tag] && TAGS[tag].class}`}
+  class:list={[
+    "text-xs font-medium px-2.5 py-0.5 rounded border-2 text-balance",
+    Astro.props.class,
+    TAGS[tag]
+      ? TAGS[tag].class
+      : "bg-gray-800/50 text-gray-400 border-gray-400",
+  ]}
 >
   {TAGS[tag] ? TAGS[tag].name : tag}
 </span>

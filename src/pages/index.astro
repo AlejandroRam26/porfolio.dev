@@ -24,6 +24,7 @@ import {
   aviable_work,
 } from "../data/porfolio_data.json";
 import Header from "../components/Header.astro";
+import Tags, { TAGS } from "../components/Tags.astro";
 ---
 
 <Layout
@@ -31,9 +32,11 @@ import Header from "../components/Header.astro";
   description={`${meta_description}`}
 >
   <Header />
-  <main class="px-4">
+  <main class="px-4 max-w-[740px] m-auto">
     <SectionContainer class="flex flex-col justify-center">
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+      <h1
+        class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10 animate-slide-in-fwd-top"
+      >
         Hola, soy {name}
         <a
           class="flex justify-center items-center"
@@ -43,13 +46,13 @@ import Header from "../components/Header.astro";
           ><Badge {aviable_work} />
         </a>
       </h1>
-      <h2 class="text-xl text-wrap">
+      <h2 class="text-xl text-wrap animate-slide-in-fwd-left">
         {experience_time && <span>+{experience_time} de experiencia.</span>}
         <span class="text-amber-200/90">{`${description}.`}</span>
         <span class="text-cyan-400/90">De {`${address}.`}</span>
         <span class="opacity-80">{`${minor_description}.`}</span>
       </h2>
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex gap-x-4 mt-8 animate-slide-in-fwd-bottom">
         {
           linkedin && (
             <SocialPill href={linkedin}>
@@ -66,6 +69,10 @@ import Header from "../components/Header.astro";
             </SocialPill>
           )
         }
+        <SocialPill href="#sobre-mi" target="">
+          <MailIcon class="size-6" />
+          CV
+        </SocialPill>
         {
           mail && (
             <SocialPill href="#contacto" target="">
@@ -82,36 +89,48 @@ import Header from "../components/Header.astro";
         class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
       >
         <BriefcaseIcon class="size-8" />
-         Experiencia laboral
+        Experiencia laboral
       </h2>
       <Experience />
     </SectionContainer>
-    
+
     <SectionContainer id="proyectos">
       <h2
         class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
       >
         <CodeIcon class="size-8" />
-         Proyectos
+        Proyectos
       </h2>
-      <Projects />
+      <div class="columns-1 sm:columns-2 gap-3">
+        <Projects />
+      </div>
     </SectionContainer>
-    
+
     <SectionContainer id="sobre-mi">
       <h2
         class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
       >
         <CodeIcon class="size-8" />
-         Sobre Mí
+        Sobre Mí
       </h2>
     </SectionContainer>
-    
+    <SectionContainer id="habilidades">
+      <h2
+        class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
+      >
+        <CodeIcon class="size-8" />
+        Habilidades
+      </h2>
+      <nav class="flex flex-row gap-4 flex-wrap justify-center items-center">
+        {Object.keys(TAGS).map((tag) => <Tags class="hover:scale-125 transition" tag={tag}/>)}
+      </nav>
+    </SectionContainer>
     <SectionContainer id="contacto">
       <h2
         class="text-2xl font-semibold mb-8 flex flex-row gap-x-3 items-center"
       >
         <CodeIcon class="size-8" />
-         Contacto
+        Contacto
       </h2>
     </SectionContainer>
   </main>

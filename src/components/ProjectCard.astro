@@ -1,27 +1,22 @@
 ---
-import ArrowRight from "../icons/ArrowRight.astro";
+import ArrowRightIcon from "../icons/ArrowRight.astro";
 import LinkedButton from "./LinkedButton.astro";
-import Tags, { TAGS } from "./Tags.astro";
-interface Props {
-  title: string;
-  description: string;
-  image?: string;
-  link?: string;
-  github?: string;
-  tags?: string[]; // Corregido el tipo de la propiedad 'tags'
-}
-const { title, description, image, link, github, tags } = Astro.props;
+import Tags from "./Tags.astro";
+import type { Project } from "../data/dataTypes";
+const { title, description, image, link, github, tags } = Astro.props as Project;
 ---
 
 <article
-  class={`relative border-2 rounded-xl shadow-md
+  class={`relative border-2 rounded-md shadow-md
   border-white/70
   bg-[#050505]/50
   shadow-slate-500/50
   hover:shadow-lg
   hover:border-indigo-300/70
   hover:shadow-indigo-300/50
-  transition overflow-hidden group`}
+  transition overflow-hidden group
+  animate-slide-in-fwd-bottom
+  [animation-timeline:view()] [animation-range:entry_20%_cover_30%]`}
 >
   <div
     class="absolute top-0 bottom-0 left-0 right-0 z-10
@@ -34,13 +29,13 @@ const { title, description, image, link, github, tags } = Astro.props;
         class="absolute left-0 top-0 bottom-0 w-full h-full
       group-hover:scale-110 transition-scale duration-300
       bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-500
-      z-0"
+      z-0 group-hover:brightness-[15%]"
         style={`background-image: url(${image});`}
       />
     )
   }
-  <div class="relative flex flex-col gap-3 justify-end h-full
-  p-5 z-20">
+  <div class="relative flex flex-col gap-8 justify-end h-full
+  p-5 z-20 translate-y-full group-hover:translate-y-0 transition duration-500">
     <h1 class="text-xl font-medium text-balance">{title}</h1>
     <div>
       <p class="text-pretty max-w-[50ch] opacity-85" set:html={description} />
@@ -55,12 +50,12 @@ const { title, description, image, link, github, tags } = Astro.props;
         <nav class="flex flex-row gap-3">
           {link && (
             <LinkedButton href={link}>
-              Ver... <ArrowRight />
+              Ver... <ArrowRightIcon />
             </LinkedButton>
           )}
           {github && (
             <LinkedButton href={github}>
-              GitHub... <ArrowRight />
+              GitHub... <ArrowRightIcon />
             </LinkedButton>
           )}
         </nav>

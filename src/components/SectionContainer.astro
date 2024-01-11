@@ -1,6 +1,8 @@
 ---
 const {class : className, id } = Astro.props;
+import ArrowRightIcon from "../icons/ArrowRight.astro";
 ---
-<section id={id} class={`${className} w-full mx-auto lg:w-[740px] py-8 pb-20 min-h-screen`}>
+<section id={id} class={`${className} w-full mx-auto py-8 pb-20 min-h-screen relative`}>
   <slot/>
+  <ArrowRightIcon class="absolute bottom-1 left-0 right-0 size-5 animate-bounce m-auto"/>
 </section>

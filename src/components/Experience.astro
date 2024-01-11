@@ -1,14 +1,14 @@
 ---
+import { experience } from "../data/porfolio_data.json";
 import ExperienceItem from "./ExperienceItem.astro";
-import { experience} from "../data/porfolio_data.json";
 const EXPERIENCIE = experience;
 ---
 
-<ol class="relative border-s border-gray-200 ml-3">
+<ol class="relative border-s border-indigo-500 ml-3">
   {
-    EXPERIENCIE.map((experiencie) => (
+    EXPERIENCIE.map((exp) => (
       <li class="mb-10 ms-4">
-        <ExperienceItem {...experiencie} />
+        <ExperienceItem {...exp} />
       </li>
     ))
   }
