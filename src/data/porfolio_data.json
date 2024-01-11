@@ -23,39 +23,35 @@
     {
       "title": "Atlas - ERP",
       "description": "Sistema capas de confeccionar libros contables como: diario, mayores y balance",
-      "link": "https://flowbite.com/docs/components/badge/",
-      "github": "https://flowbite.com/docs/components/badge/",
       "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
       "tags": ["CS", "NET", "MYSQL", "WPF"]
     },
     {
       "title": "Website Restaurant",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["REACT", "TAILWIND", "JS"],
+      "tags": ["REACT", "TAILWIND", "JS", "IA", "VUE"],
       "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
       "link": "https://flowbite.com/docs/components/badge/",
       "github": "https://flowbite.com/docs/components/badge/"
     },
     {
-      "title": "Sistema Control de Stock",
+      "title": "Terminal",
+      "tags": ["NODE", "DOC", "JAVA", "TS"],
+      "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
+      "link": "https://flowbite.com/docs/components/badge/"
+    },
+    {
+      "title": "Spotify Clone",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["HTML", "ASTRO", "CSS", "TAILWIND", "JS"],
+      "tags": ["ASTRO", "REACT", "TAILWIND", "TS"],
       "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
       "link": "https://flowbite.com/docs/components/badge/",
       "github": "https://flowbite.com/docs/components/badge/"
     },
     {
-      "title": "Spotify Replie",
+      "title": "Design Components",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["REACT", "TAILWIND", "WPF"],
-      "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
-      "link": "https://flowbite.com/docs/components/badge/",
-      "github": "https://flowbite.com/docs/components/badge/"
-    },
-    {
-      "title": "Components",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui quidem accusamus enim earum ea!",
-      "tags": ["DSYS", "ASTRO", "TAILWIND", "SBOOK", "ATOMIC"],
+      "tags": ["DSYS", "ASTRO", "TAILWIND", "SBOOK", "ATOMIC", "Movil"],
       "image": "https://imgs.search.brave.com/z-OKdkc4K_Ge9j5k89roDNS70tKJL-ptDGYHxfGb-38/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzI0NjI2/Mzcvc2NyZWVuc2hv/dHMvMTA4NzczNTQv/bWVkaWEvZTEzMzky/ZWQ3NzJhYjAwMmJh/NWRlMGQxY2E3NjVk/ODcuanBnP3Jlc2l6/ZT00MDB4MzAwJnZl/cnRpY2FsPWNlbnRl/cg",
       "link": "https://flowbite.com/docs/components/badge/"
     }
@@ -105,6 +101,25 @@
           "htmlTag": "p"
         }
       ]
+    },
+    {
+      "date" : "Abril 2023",
+      "title" : "ERP Simple"
+    }
+    ,
+    {
+      "date" : "Marzo 2023",
+      "title" : "ERP Simple"
+    }
+    ,
+    {
+      "date" : "Febrero 2023",
+      "title" : "ERP Simple"
+    }
+    ,
+    {
+      "date" : "Enero 2023",
+      "title" : "ERP Simple"
     }
   ]
 }

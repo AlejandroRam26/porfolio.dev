@@ -37,7 +37,12 @@ import Tags, { TAGS } from "../components/Tags.astro";
       <h1
         class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10 animate-slide-in-fwd-top"
       >
-        Hola, soy {name}
+        Hola, soy
+        <div class="relative group">
+          <span class="absolute group-hover:animate-ping text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600
+          group-hover:from-sky-500 group-hover:to-cyan-600">{name}</span>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600">{name}</span>
+        </div>
         <a
           class="flex justify-center items-center"
           href={linkedin}
@@ -122,7 +127,7 @@ import Tags, { TAGS } from "../components/Tags.astro";
         Habilidades
       </h2>
       <nav class="flex flex-row gap-4 flex-wrap justify-center items-center">
-        {Object.keys(TAGS).map((tag) => <Tags class="hover:scale-125 transition" tag={tag}/>)}
+        {Object.keys(TAGS).map((tag) => <Tags tag={tag} />)}
       </nav>
     </SectionContainer>
     <SectionContainer id="contacto">

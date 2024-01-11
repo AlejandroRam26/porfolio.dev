@@ -3,7 +3,8 @@ import ArrowRightIcon from "../icons/ArrowRight.astro";
 import LinkedButton from "./LinkedButton.astro";
 import Tags from "./Tags.astro";
 import type { Project } from "../data/dataTypes";
-const { title, description, image, link, github, tags } = Astro.props as Project;
+const { title, description, image, link, github, tags } =
+  Astro.props as Project;
 ---
 
 <article
@@ -27,26 +28,33 @@ const { title, description, image, link, github, tags } = Astro.props as Project
     image && (
       <div
         class="absolute left-0 top-0 bottom-0 w-full h-full
-      group-hover:scale-110 transition-scale duration-300
+      group-hover:scale-110 duration-300
       bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-500
-      z-0 group-hover:brightness-[15%]"
+      z-0 group-hover:brightness-[15%] delay-300 group-hover:delay-0"
         style={`background-image: url(${image});`}
       />
     )
   }
-  <div class="relative flex flex-col gap-8 justify-end h-full
-  p-5 z-20 translate-y-full group-hover:translate-y-0 transition duration-500">
+  <div
+    class="relative flex flex-col gap-8 justify-end h-full
+  p-5 z-20 translate-y-full group-hover:translate-y-0 transition duration-500 delay-300 group-hover:delay-0"
+  >
     <h1 class="text-xl font-medium text-balance">{title}</h1>
-    <div>
-      <p class="text-pretty max-w-[50ch] opacity-85" set:html={description} />
-    </div>
-    <nav
-      class="flex flex-row gap-3 flex-wrap justify-start items-center pointer-events-none"
-    >
+    {
+      description && (
+        <div>
+          <p
+            class="text-pretty max-w-[50ch] opacity-85"
+            set:html={description}
+          />
+        </div>
+      )
+    }
+    <nav class="flex flex-row gap-3 flex-wrap justify-start items-center">
       {tags && tags.map((tag) => <Tags tag={tag} />)}
     </nav>
     {
-      link && github && (
+      (link || github) && (
         <nav class="flex flex-row gap-3">
           {link && (
             <LinkedButton href={link}>
